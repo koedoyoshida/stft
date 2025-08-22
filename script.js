@@ -3,11 +3,12 @@ var script01 = function()
 	chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
 		var url = tabs[0].url;
 		//alert(url);
-		window.open('https://twitter.com/search?q=' + encodeURIComponent(url) + '');
+		chrome.tabs.create({'url': 'https://twitter.com/search?q=' + encodeURIComponent(url) + ''}, function(tab) {});
+t(url) + '');
 	});
 };
  
 (function()
 {
-    chrome.browserAction.onClicked.addListener(script01);
+    chrome.action.onClicked.addListener(script01);
 })();
