@@ -1,27 +1,28 @@
-Stft:Search twitter from tab
+Stft:Search X(twitter) from tab
 ====
 
 Overview
 
-## Search twitter by Chrome URL
-Chrome�^�u�ɕ\������Ă���URL��twitter���������ĊJ���܂��B
+## Search X(twitter) by Chrome URL
+Chromeタブに表示されているURLでX(twitter)を検索して開きます。
 
 ## Requirement
-Chrome(Checked Chrome 89)
+Chrome Manifest V3対応ブラウザ (Checked Chrome 139)
 
 ## Install
-[�n���o�[�K�[���j���[]-[���̑��̃c�[��]-[�g���@�\]-[�p�b�P�[�W������Ă��Ȃ��g���@�\��ǂݍ���]:
-�_�E�����[�h����[stw]�t�H���_���w��
-�K�v�Ȃ炻�̌�[�X�V]
+[ハンバーガーメニュー]-[その他のツール]-[拡張機能]-[パッケージ化されていない拡張機能を読み込む]:
+ダウンロードした[stfw]フォルダを指定
+必要ならその後[更新]
 
 ## Usage
-�n���o�[�K�[���j���[�ɂ��̊g���@�\�̃A�C�R����pin�~�ߕ\����A�A�C�R�������N���b�N
+ハンバーガーメニューにこの拡張機能のアイコンをpin止め表示後、アイコンを左クリック
 
 ## Contribution
-�N�C�b�N�n�b�N�ō쐬�������̂Ȃ̂ŁA�悳���Ȃ��̂�����Ή\�Ȃ��荞�݂܂��B
+クイックハックで作成したものなので、よさげなものがあれば可能なら取り込みます。
 
 ## Licence
 [MIT]
 
 ## Author
 [koedoyoshida](https://github.com/koedoyoshida)
+
