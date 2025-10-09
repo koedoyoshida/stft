@@ -1,10 +1,18 @@
 var script01 = function()
 {
 	chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
+		var title = tabs[0].title;
 		var url = tabs[0].url;
 		var base_url = url.split("?")[0]
+
 		//alert(url);
-		chrome.tabs.create({'url': 'https://twitter.com/search?q=' + encodeURIComponent(base_url) + "%20OR%20" + encodeURIComponent(url) }, function(tab) {});
+		//OR search space delimited
+		chrome.tabs.create({'url': 'https://twitter.com/search?q=' + 
+			encodeURIComponent(base_url) + 
+			"%20OR%20" + 
+			encodeURIComponent(url) + 
+			'%20OR%20"' + 
+			encodeURIComponent(title) + '"'}, function(tab) {});
 	});
 };
  
