@@ -52,7 +52,7 @@ btn.addEventListener('click', () => {
         }
 
         const query = parts.join(' OR ');
-        chrome.tabs.create({url: 'https://twitter.com/search?q=' + encodeURIComponent(query)});
+        chrome.tabs.create({url: 'https://x.com/search?q=' + encodeURIComponent(query)});
         window.close();
     });
 });
