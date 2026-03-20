@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 260px;
+      padding: 14px;
+      font-family: sans-serif;
+      font-size: 13px;
+    }
+    h3 {
+      margin: 0 0 12px;
+      font-size: 14px;
+      color: #1a1a1a;
+    }
+    .mode-label {
+      display: block;
+      margin-bottom: 8px;
+      cursor: pointer;
+    }
+    .options {
+      margin: 6px 0 12px 18px;
+      display: none;
+    }
+    .options.visible {
+      display: block;
+    }
+    .options label {
+      display: block;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+    button {
+      width: 100%;
+      padding: 8px;
+      background: #1da1f2;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      margin-top: 4px;
+    }
+    button:hover {
+      background: #0d8fd8;
+    }
+    button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+    .warn {
+      color: #c00;
+      font-size: 11px;
+      margin-top: 6px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h3>X(Twitter) 検索</h3>
+
+  <label class="mode-label">
+    <input type="radio" name="mode" value="quick" checked>
+    クイック検索
+  </label>
+  <label class="mode-label">
+    <input type="radio" name="mode" value="detail">
+    詳細検索
+  </label>
+
+  <div class="options" id="options">
+    <label><input type="checkbox" id="opt-base" checked> ベースURL</label>
+    <label><input type="checkbox" id="opt-full"> 完全URL</label>
+    <label><input type="checkbox" id="opt-title" checked> タイトル</label>
+  </div>
+
+  <p class="warn" id="warn">1つ以上選択してください。</p>
+  <button id="search-btn">検索</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -12,7 +12,8 @@
     "action":
     {
         "default_icon": "icon16.png",
-        "default_title": "Search twitter from tab"
+        "default_title": "Search twitter from tab",
+        "default_popup": "popup.html"
     },
     "background":
     {
