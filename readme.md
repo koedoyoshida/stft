@@ -17,9 +17,6 @@ Chrome Manifest V3対応ブラウザ (Checked Chrome 139)
 ## Usage
 ハンバーガーメニューにこの拡張機能のアイコンをpin止め表示後、アイコンを左クリック
 
-## Contribution
-クイックハックで作成したものなので、よさげなものがあれば可能なら取り込みます。
-
 ## Licence
 [MIT]
 
