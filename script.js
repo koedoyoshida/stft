@@ -4,19 +4,18 @@ var script01 = function()
 		var title = tabs[0].title;
 		var url = tabs[0].url;
 		var base_url = url.split("?")[0]
-
+		
 		//alert(url);
-		//OR search space delimited
 		chrome.tabs.create({'url': 'https://twitter.com/search?q=' + 
-			encodeURIComponent(base_url) + 
-			"%20OR%20" + 
-			encodeURIComponent(url) + 
-			'%20OR%20"' + 
-			encodeURIComponent(title) + '"'}, function(tab) {});
+			'%22' + encodeURIComponent(base_url) + '%22' + 
+			'%20OR%20' + 
+			'%22' + encodeURIComponent(url) + '%22' + 
+			'%20OR%20' + 
+			'%22' + encodeURIComponent(title) + '%22'}, function(tab) {});
 	});
 };
- 
+
 (function()
 {
-    chrome.action.onClicked.addListener(script01);
+	chrome.action.onClicked.addListener(script01);
 })();
